@@ -4,24 +4,34 @@
 To develop a convolutional deep neural network (CNN) for image classification and to verify the response for new images.
 
 ##   PROBLEM STATEMENT AND DATASET
-Include the Problem Statement and Dataset.
+The objective of this experiment is to develop a Convolutional Neural Network (CNN) using TensorFlow to perform image classification. The model will be trained on a standard dataset after preprocessing, and its performance will be evaluated using training and validation loss plots. Finally, the trained model will be tested on new handwritten scanned images to verify its accuracy on unseen data.
+<img width="896" height="155" alt="image" src="https://github.com/user-attachments/assets/86341df5-154c-4a15-a3a5-973bf6f1202b" />
 
 ## Neural Network Model
-Include the neural network model diagram.
+<img width="998" height="698" alt="image" src="https://github.com/user-attachments/assets/979e7f8b-c93b-486c-9bbb-9071def832db" />
 
 ## DESIGN STEPS
 ### STEP 1: 
 
-Write your own steps
+Import the required libraries (torch, torchvision, torch.nn, torch.optim) and load the image dataset with necessary preprocessing like normalization and transformation.
+### STEP 2: 
 
-1.Load and Preprocess Data
-2.Get the shape of the first image in the training dataset
-3.Get the shape of the first image in the test dataset
-4.Train the Model
-5.Test the Model
-6.Predict on a Single Image
-7.Display the image
+Split the dataset into training and testing sets and create DataLoader objects to feed images in batches to the CNN model.
 
+### STEP 3: 
+
+Define the CNN architecture using convolutional layers, ReLU activation, max pooling layers, and fully connected layers as implemented in the CNNClassifier class.
+
+### STEP 4: 
+
+Initialize the model, define the loss function (CrossEntropyLoss), and choose the optimizer (Adam) for training the network.
+
+### STEP 5: 
+
+Train the model using the training dataset by performing forward pass, computing loss, backpropagation, and updating weights for multiple epochs.
+
+### STEP 6: 
+Evaluate the trained model on test images and verify the classification accuracy for new unseen images.
 
 ## PROGRAM
 
